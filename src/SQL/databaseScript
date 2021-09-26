@@ -1,0 +1,43 @@
+
+## "user","role","menu"
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `tower_register`.`user`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id主键',
+  `name` varchar(25) NULL COMMENT '名称',
+  `role_id` int(11) NULL COMMENT '角色id',
+  `account` varchar(25) NOT NULL COMMENT '登录账号',
+  `pass` varchar(25) NOT NULL COMMENT '登录密码',
+  `p_pic` varchar(255) NULL COMMENT '头像图片路径',
+  `is_admin` TINYINT(1)	NULL COMMENT '是否管理员',
+  `create_time` datetime NOT NULL COMMENT '创建时间',
+  `update_time` datetime NOT NULL COMMENT '更新时间',
+  `create_user` int(11) NOT NULL COMMENT '创建用户',
+  `update_user` int(11) NOT NULL COMMENT '更新用户',
+  PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+DROP TABLE IF EXISTS `role`;
+CREATE TABLE `tower_register`.`role`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id主键',
+  `name` varchar(25) NULL COMMENT '角色名称',
+  `menu` varchar(255) NULL COMMENT '菜单id json',
+  `create_time` datetime NOT NULL COMMENT '创建时间',
+  `update_time` datetime NOT NULL COMMENT '更新时间',
+	 `create_user` int(11) NOT NULL COMMENT '创建用户',
+  `update_user` int(11) NOT NULL COMMENT '更新用户',
+  PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+DROP TABLE IF EXISTS `menu`;
+CREATE TABLE `tower_register`.`menu`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id主键',
+  `name` varchar(25) NULL COMMENT '菜单名称',
+  `path` varchar(255) NULL COMMENT '菜单路径',
+  `icon` varchar(255) NULL COMMENT '菜单图标',
+  `pid` int(11) NULL COMMENT '父菜单id',
+  `create_time` datetime NOT NULL COMMENT '创建时间',
+  `update_time` datetime NOT NULL COMMENT '更新时间',
+	 `create_user` int(11) NOT NULL COMMENT '创建用户',
+  `update_user` int(11) NOT NULL COMMENT '更新用户',
+  PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+

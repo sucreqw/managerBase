@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2912ced4-4d32-4a3e-9c27-24786996cf4b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="managerRegister" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="managerRegister" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="managerRegister" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bEoqMCy3JJCryRqEgcQQdE7fYF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaProject\managerBase\src\main\java\com\common\manager\config" />
+      <recent name="D:\javaProject\managerRegister\src\main\resources" />
+      <recent name="D:\javaProject\managerRegister\src\main\java\com\common\manager\dto\register" />
+      <recent name="D:\javaProject\managerRegister\src\main\java\com\common\manager\info\register" />
+      <recent name="D:\javaProject\managerRegister\src\main\java\com\common\manager\controller\register" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.common.manager.common" />
+      <recent name="com.common.manager.config" />
+      <recent name="com.common.manager.repository.entity" />
+      <recent name="com.common.manager.controller" />
+      <recent name="com.common.manager.info" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\javaProject\managerRegister\src\main\resources\mappers" />
+      <recent name="D:\javaProject\managerRegister\src\main\resources\mappers\common" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mappers" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.common.manager.test.main" />
+      <module name="managerBase.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.common.manager.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="managerRegister [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="managerRegister [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="managerRegister.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.common.manager.ManagerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Gradle.managerRegister [build]" />
+      <item itemvalue="Gradle.managerRegister [clean]" />
+      <item itemvalue="Spring Boot.ManagerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="Gradle.managerRegister [build]" />
+        <item itemvalue="Gradle.managerRegister [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2912ced4-4d32-4a3e-9c27-24786996cf4b" name="Default Changelist" comment="" />
+      <created>1588206804080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588206804080</updated>
+      <workItem from="1588206809431" duration="1846000" />
+      <workItem from="1588211164603" duration="1497000" />
+      <workItem from="1588213566897" duration="7354000" />
+      <workItem from="1588304740059" duration="560000" />
+      <workItem from="1588424294078" duration="399000" />
+      <workItem from="1588636609505" duration="16369000" />
+      <workItem from="1588909494232" duration="953000" />
+      <workItem from="1588983286209" duration="7596000" />
+      <workItem from="1589188963049" duration="6441000" />
+      <workItem from="1589329006565" duration="176000" />
+      <workItem from="1589500955196" duration="1434000" />
+      <workItem from="1589551510279" duration="348000" />
+      <workItem from="1589587959065" duration="5650000" />
+      <workItem from="1589629496336" duration="12000" />
+      <workItem from="1589761952903" duration="1685000" />
+      <workItem from="1589780414762" duration="1317000" />
+      <workItem from="1608690378737" duration="2297000" />
+      <workItem from="1608692686116" duration="45965000" />
+      <workItem from="1609378922491" duration="71000" />
+      <workItem from="1613791670045" duration="135000" />
+      <workItem from="1623719509710" duration="8049000" />
+      <workItem from="1623807934996" duration="2059000" />
+      <workItem from="1624421386191" duration="60000" />
+      <workItem from="1625015548198" duration="40000" />
+      <workItem from="1625015658140" duration="97000" />
+      <workItem from="1625039664665" duration="55000" />
+      <workItem from="1625624893882" duration="127000" />
+      <workItem from="1625625945937" duration="1886000" />
+      <workItem from="1627869836433" duration="798000" />
+      <workItem from="1628061309717" duration="48000" />
+      <workItem from="1628740545097" duration="502000" />
+      <workItem from="1629963596615" duration="470000" />
+      <workItem from="1629965085149" duration="612000" />
+      <workItem from="1632278655863" duration="278000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623721209508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623721209508" />
+    <state x="653" y="176" key="#main" timestamp="1623721166603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="653" y="176" key="#main/0.0.1920.1040@0.0.1920.1040" timestamp="1623721166603" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1628741050268">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628741050268" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1623742280927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1623809228154">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623809228154" />
+  </component>
+</project>
