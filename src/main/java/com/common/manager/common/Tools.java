@@ -1,5 +1,6 @@
 package com.common.manager.common;
 
+import java.math.BigInteger;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -38,13 +39,20 @@ public class Tools {
     }
     /**
      * 返回今天或者明天 格式
-     * @param diff 0 为今天，1为明天 yyyy-MM-dd
+     * @param diff 0 为今天，1为明天 -1为昨天 yyyy-MM-dd
      * @return
      */
     public static String getDay(int diff){
-        Long n=System.currentTimeMillis();
-        n=n+(diff*(1000*60*60*24));
-        Date date=new Date(n);//此时date为当前的时间
+        BigInteger n = BigInteger.valueOf(System.currentTimeMillis());
+        //转为绝对值
+        BigInteger di=BigInteger.valueOf(Math.abs(diff));
+        if (diff>=0){
+            n=n.add(di.multiply(BigInteger.valueOf((1000*60*60*24))));
+        }else{
+
+            n=n.subtract(di.multiply(BigInteger.valueOf((1000*60*60*24))));
+        }
+        Date date=new Date(n.longValue());//此时date为当前的时间
         SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");//设置当前时间的格式，为年-月-日
         return dateFormat.format(date);
     }

@@ -64,6 +64,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bEoqMCy3JJCryRqEgcQQdE7fYF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -186,6 +189,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -230,6 +245,9 @@
       <workItem from="1629963596615" duration="470000" />
       <workItem from="1629965085149" duration="612000" />
       <workItem from="1632278655863" duration="278000" />
+      <workItem from="1634783656935" duration="1253000" />
+      <workItem from="1635126212268" duration="48000" />
+      <workItem from="1635128212116" duration="33000" />
     </task>
     <servers />
   </component>
@@ -237,53 +255,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623721209508">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1634795562124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623721209508" />
-    <state x="653" y="176" key="#main" timestamp="1623721166603">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="653" y="176" key="#main/0.0.1920.1040@0.0.1920.1040" timestamp="1623721166603" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1628741050268">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628741050268" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1623742280927">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623742280927" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1623809228154">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623809228154" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1634795562124" />
   </component>
 </project>
