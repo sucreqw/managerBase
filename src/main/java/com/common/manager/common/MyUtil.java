@@ -5,8 +5,12 @@ package com.common.manager.common;
 
 
 import javax.crypto.Cipher;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
+import java.security.Key;
 import java.security.MessageDigest;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -71,7 +75,36 @@ public class MyUtil {
 
         return ret;
     }
-
+    /**
+     * aes加密方法,默认为AES/ECB/PKCS5Padding,128位数据块
+     *
+     * @param sKey 加密 的密码?
+     * @param sSrc 要加密的数据
+     * @return 成功返回base64格式的字符串, 不成功返回null!
+     */
+    public static String EncryptAes(String sSrc, String sKey) {
+        if (sKey == null) {
+            System.out.print("Key为空null");
+            return null;
+        }
+        // 判断Key是否为16位
+        if (sKey.length() != 16) {
+            System.out.print("Key长度不是16位");
+            return null;
+        }
+        try{
+            byte[] raw = sKey.getBytes("utf-8");
+            SecretKeySpec skeySpec = new SecretKeySpec(raw, "AES");
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");//"算法/模式/补码方式"
+            cipher.init(Cipher.ENCRYPT_MODE, skeySpec);
+            byte[] encrypted = cipher.doFinal(sSrc.getBytes("utf-8"));
+            return new String( Base64.getEncoder().encode(encrypted));//此处使用BASE64做转码功能，同时能起到2次加密的作用。
+        }catch (Exception E){
+            E.printStackTrace();
+            System.out.println(E.getMessage());
+        }
+        return null;
+    }
     /**
      * AES解密算法.默认AES/ECB/NoPadding,128位数据块,偏移量为�?.
      *
@@ -117,6 +150,30 @@ public class MyUtil {
         }
         return "";
     }
+    /**
+     * DES加密 CEC
+     *
+     * @param data 加密数据
+     * @param key  密钥
+     * @return 返回加密后的数据
+     */
+    public static String desEncrypt(String data, String key, String keyiv) {
+        try {
+            Key deskey = null;
+            DESedeKeySpec spec = new DESedeKeySpec(key.getBytes());
+            SecretKeyFactory keyfactory = SecretKeyFactory.getInstance("desede");
+            deskey = keyfactory.generateSecret(spec);
+            Cipher cipher = Cipher.getInstance("desede" + "/CBC/PKCS5Padding");
+            IvParameterSpec ips = new IvParameterSpec(keyiv.getBytes());
+            cipher.init(Cipher.ENCRYPT_MODE, deskey, ips);
+            return Base64.getEncoder().encodeToString(cipher.doFinal(data.getBytes()));
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
     /**
      * des加密方法,默认为DES/ECB/PKCS5Padding
      *

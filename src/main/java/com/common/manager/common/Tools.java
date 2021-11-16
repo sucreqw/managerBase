@@ -215,4 +215,37 @@ public class Tools {
         }
 
     }
+    /**
+     * 日期转换为timestamp
+     * @param source 要转换的字符
+     * @return 失败返回null
+     */
+    public static String day2Timestamp(String source){
+        //String tsStr = "";
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try{
+            Date date1 = sdf.parse(source);
+            return String.valueOf(date1.getTime()).substring(0,10);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
+    /**
+     * timestamp转换为日期
+     * @param source 要转换的字符
+     * @return 失败返回null
+     */
+    public static String Timestamp2day(String source){
+
+        //String tsStr = "";
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        try{
+            Date date=new Date(Long.valueOf(source));
+            return sdf.format(date);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
 }
