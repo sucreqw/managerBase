@@ -66,7 +66,7 @@ public class PageUtil {
                             //获取属性
                             String name = field.getName();
                             //获取属性值
-                            Object value = field.get(source.get(i));
+                            Object value = field.get(source.get(i))==null?"":field.get(source.get(i));
                             //一个个赋值
                             row.add(String.valueOf(value));
                         } catch (IllegalAccessException e) {

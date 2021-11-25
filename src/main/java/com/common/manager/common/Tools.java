@@ -21,6 +21,7 @@ public class Tools {
      * @param format
      */
     public static String getNow(String format){
+        if(format.equals(""))format="yyyy-MM-dd HH:mm:ss";
         String tsStr = "";
         DateFormat sdf = new SimpleDateFormat(format);
 
@@ -31,9 +32,9 @@ public class Tools {
 			 /*//方法二
              tsStr = ts.toString();
              System.out.println(tsStr);*/
-        } catch (Exception es) {
-
-            System.out.println("timestamp出错！" + es.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("timestamp出错！" + e.getMessage());
         }
         return tsStr;
     }
@@ -79,6 +80,7 @@ public class Tools {
             date=calendar.getTime();   //这个时间就是日期往后推一天的结果
             tsStr = sdfReturn.format(date);
         }catch (Exception e){
+            e.printStackTrace();
             System.out.println("timestamp出错！" + e.getMessage());
         }
         return  tsStr;
@@ -101,9 +103,9 @@ public class Tools {
 			 /*//方法二
              tsStr = ts.toString();
              System.out.println(tsStr);*/
-        } catch (Exception es) {
-
-            System.out.println("timestamp出错！" + es.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("timestamp出错！" + e.getMessage());
         }
         return tsStr;
     }
@@ -124,6 +126,7 @@ public class Tools {
             Long result = (retTarget-retSource)/1000/ 60 / 60 / 24;
             return result.intValue();
         }catch (Exception e){
+            e.printStackTrace();
             System.out.println("对比时间出错：" + e.getMessage());
         }
         return null;
@@ -155,6 +158,7 @@ public class Tools {
                 return -1;
             }
         }catch (Exception e){
+            e.printStackTrace();
             System.out.println(e.getMessage());
         }
         return 0;
@@ -178,6 +182,35 @@ public class Tools {
             int days = (int) ((date2.getTime() - date1.getTime()) / (1000*3600*24));
             return Math.abs(days);
         }catch (Exception e){
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
+
+    /**
+     * 对比两个日期，返回相差的小时
+     * @param time1
+     * @param time2
+     * @param sourcrFormat
+
+     * @return
+     */
+    public static Double compareHour(String time1,String time2,String sourcrFormat){
+        //String tsStr = "";
+        DateFormat sdf = new SimpleDateFormat(sourcrFormat);
+        try {
+            Date date1 = sdf.parse(time1);
+            Date date2 = sdf.parse(time2);
+            Long t1=date1.getTime();
+            Long t2=date2.getTime();
+            Double mmm=(Double.valueOf(date2.getTime() - date1.getTime())/(1000*60*60))*100;
+            Long mm = Math.round(mmm);
+            Double tt=Double.valueOf(mm)/100 ;
+            //Double days = Double.valueOf(date2.getTime() - date1.getTime()) / Double.valueOf(1000*60*60) ;
+            return tt;
+        }catch (Exception e){
+            e.printStackTrace();
             System.out.println(e.getMessage());
         }
         return null;
@@ -209,6 +242,7 @@ public class Tools {
             ret=Double.valueOf(source);
             //return ret;
         } catch (Exception e){
+            e.printStackTrace();
             ret=null;
         }finally {
             return ret;
@@ -227,6 +261,7 @@ public class Tools {
             Date date1 = sdf.parse(source);
             return String.valueOf(date1.getTime()).substring(0,10);
         }catch (Exception e){
+            e.printStackTrace();
             System.out.println(e.getMessage());
         }
         return null;
@@ -244,6 +279,7 @@ public class Tools {
             Date date=new Date(Long.valueOf(source));
             return sdf.format(date);
         }catch (Exception e){
+            e.printStackTrace();
             System.out.println(e.getMessage());
         }
         return null;
