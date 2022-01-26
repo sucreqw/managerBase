@@ -2,7 +2,7 @@
 ## "user","role","menu"
 
 DROP TABLE IF EXISTS `user`;
-CREATE TABLE `tower_register`.`user`  (
+CREATE TABLE `user`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id主键',
   `name` varchar(25) NULL COMMENT '名称',
   `role_id` int(11) NULL COMMENT '角色id',
@@ -17,7 +17,7 @@ CREATE TABLE `tower_register`.`user`  (
   PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 DROP TABLE IF EXISTS `role`;
-CREATE TABLE `tower_register`.`role`  (
+CREATE TABLE `role`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id主键',
   `name` varchar(25) NULL COMMENT '角色名称',
   `menu` varchar(255) NULL COMMENT '菜单id json',
@@ -28,7 +28,7 @@ CREATE TABLE `tower_register`.`role`  (
   PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 DROP TABLE IF EXISTS `menu`;
-CREATE TABLE `tower_register`.`menu`  (
+CREATE TABLE `menu`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id主键',
   `name` varchar(25) NULL COMMENT '菜单名称',
   `path` varchar(255) NULL COMMENT '菜单路径',

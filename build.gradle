@@ -20,8 +20,9 @@ allprojects {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-test'
+    implementation group: 'junit', name: 'junit'
 
     //引入JDBC 和mybatis-plus
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'

@@ -89,6 +89,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -115,7 +116,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="JUnit.main.test">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.common.manager.test.main" />
       <module name="managerBase.main" />
@@ -167,6 +168,22 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="main.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="managerBase.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.common.manager.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.common.manager.test" />
+      <option name="MAIN_CLASS_NAME" value="com.common.manager.test.main" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="managerRegister.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.common.manager.ManagerApplication" />
@@ -180,9 +197,11 @@
       <item itemvalue="Gradle.managerRegister [build]" />
       <item itemvalue="Gradle.managerRegister [clean]" />
       <item itemvalue="Spring Boot.ManagerApplication" />
+      <item itemvalue="JUnit.main.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.main.test" />
         <item itemvalue="Application.main" />
         <item itemvalue="Gradle.managerRegister [build]" />
         <item itemvalue="Gradle.managerRegister [clean]" />
@@ -256,6 +275,11 @@
       <workItem from="1637282270847" duration="23000" />
       <workItem from="1637743916613" duration="65000" />
       <workItem from="1638408990754" duration="682000" />
+      <workItem from="1640159429752" duration="20000" />
+      <workItem from="1641434868225" duration="17000" />
+      <workItem from="1641529208286" duration="68000" />
+      <workItem from="1643166707540" duration="11000" />
+      <workItem from="1643170541807" duration="768000" />
     </task>
     <servers />
   </component>
@@ -267,5 +291,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1637034774493" />
+    <state width="1877" height="311" key="GridCell.Tab.0.bottom" timestamp="1643178804162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="311" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1643178804162" />
+    <state width="1877" height="311" key="GridCell.Tab.0.center" timestamp="1643178804162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="311" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1643178804162" />
+    <state width="1877" height="311" key="GridCell.Tab.0.left" timestamp="1643178804162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="311" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1643178804162" />
+    <state width="1877" height="311" key="GridCell.Tab.0.right" timestamp="1643178804162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="311" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1643178804162" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1643170672030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1643170672030" />
   </component>
 </project>

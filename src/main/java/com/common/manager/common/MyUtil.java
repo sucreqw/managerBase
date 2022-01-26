@@ -31,6 +31,7 @@ public class MyUtil {
     //计数器
     public static int counts = 0;
     public static int succcounts = 0;
+    public static Random r = new Random(System.currentTimeMillis());
 //	/**
 //	 * @param fileName 为当前目录下的文件名,带后�?
 //	 * @param list     为要加载进入的list对象
@@ -249,7 +250,7 @@ public class MyUtil {
      * @return String 类型的随机数�?
      */
     public static String getRand(int u, int l) {
-        Random r = new Random(System.currentTimeMillis());
+
         return String.valueOf(((r.nextInt(u - l) + l)));
     }
 

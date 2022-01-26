@@ -1,10 +1,7 @@
 package com.common.manager.common;
 
 
-import okhttp3.FormBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
+import okhttp3.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -54,6 +51,42 @@ public class OkHttp {
         }
         request.url(url);
         request.post(requestBody.build());
+        //request.build();
+
+        try (
+                Response response = client.build().newCall(request.build()).execute()
+        ) {
+            return response.headers() + response.body().string();
+        } catch (Exception e) {
+            System.out.println("okhttp出错！" + e.getMessage());
+        }
+
+
+        return null;
+    }
+    /**
+     * post 请求，报头可为空。
+     *
+     * @param url    连接地址 可带上端口号。
+     * @param header 报头，可为空
+     * @param body   {} json 格式的body
+     * @return
+     */
+    public String goPost(String url, HashMap<String, String> header, String body) {
+        OkHttpClient.Builder client =new OkHttpClient().newBuilder().readTimeout(800,TimeUnit.SECONDS).followRedirects(false);
+        // client = new OkHttpClient();
+        MediaType JSON=MediaType.parse("application/json; charset=utf-8");
+        RequestBody requestBody = RequestBody.create(JSON,body);
+        Request.Builder request = new Request.Builder();
+
+        //加入报头
+        if (header != null && header.size() != 0) {
+            for (String head : header.keySet()) {
+                request.addHeader(head, header.get(head));
+            }
+        }
+        request.url(url);
+        request.post(requestBody);
         //request.build();
 
         try (
