@@ -9,8 +9,35 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class OkHttp {
+public class OkHttpNew {
 
+    private String header;
+    private String body;
+    private byte[] bodyByte;
+
+    public String getHeader() {
+        return header;
+    }
+
+    public void setHeader(String header) {
+        this.header = header;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public byte[] getBodyByte() {
+        return bodyByte;
+    }
+
+    public void setBodyByte(byte[] bodyByte) {
+        this.bodyByte = bodyByte;
+    }
 
     /**
      * 重载post请求，去掉报关参数。
@@ -57,7 +84,9 @@ public class OkHttp {
         try (
                 Response response = client.build().newCall(request.build()).execute()
         ) {
-            return response.headers() + response.body().string();
+            this.header=response.headers().toString();
+            this.body=response.body().toString();
+            return response.body().string();
         } catch (Exception e) {
             System.out.println("okhttp出错！" + e.getMessage());
         }
@@ -93,7 +122,9 @@ public class OkHttp {
         try (
                 Response response = client.build().newCall(request.build()).execute()
         ) {
-            return response.headers() + response.body().string();
+            this.header=response.headers().toString();
+            this.body=response.body().toString();
+            return response.body().string();
         } catch (Exception e) {
             System.out.println("okhttp出错！" + e.getMessage());
         }
@@ -139,7 +170,9 @@ public class OkHttp {
         try (
                 Response response = client.build().newCall(request.build()).execute()
         ) {
-            return response.headers() + response.body().string();
+            this.header=response.headers().toString();
+            this.body=response.body().toString();
+            return response.body().string();
         } catch (Exception e) {
             System.out.println("okhttp出错！" + e.getMessage());
         }
@@ -183,7 +216,9 @@ public class OkHttp {
         try (
                 Response response = client.build().newCall(request.build()).execute()
         ) {
-            return response.headers() + response.body().string();
+            this.header=response.headers().toString();
+            this.body=response.body().toString();
+            return response.body().string();
         } catch (Exception e) {
             System.out.println("okhttp出错！" + e.getMessage());
         }
@@ -198,33 +233,24 @@ public class OkHttp {
      * @return
      */
     public byte[] goGetByte(String url){
-        return (byte[])goGetByte(url,null).get(1);
+        return goGetByte(url,null);
     }
     /**
      * 以字节形式返回数据，不用定义header,返回数据不包括报头
      * @param url
      * @return
      */
-    public byte[] goGetByteWithHeader(String url,HashMap<String,String> header){
-        return (byte[])goGetByte(url,header).get(1);
-    }
-    /**
-     * 以字节形式返回数据，不用定义header,返回数据包括报头
-     * @param url
-     * @return
-     */
-    public List<Object> goGetByteReturnHeader(String url){
+    public byte[] goGetByteWithOutHeader(String url){
         return goGetByte(url,null);
     }
-
     /**
      * 以字节形式返回数据，定义header ,返回数据包括报头
      * @param url
      * @param header
      * @return
      */
-    public List<Object> goGetByte(String url,HashMap<String, String> header){
-        List<Object> list=new ArrayList<>();
+    public byte[] goGetByte(String url,HashMap<String, String> header){
+        //List<Object> list=new ArrayList<>();
         //OkHttpClient client = new OkHttpClient();
         OkHttpClient.Builder client =new OkHttpClient().newBuilder().readTimeout(800,TimeUnit.SECONDS).followRedirects(false);
         Request.Builder request = new Request.Builder();
@@ -242,9 +268,11 @@ public class OkHttp {
                 Response response = client.build().newCall(request.build()).execute()
         ) {
             //System.out.println(response.headers());
-            list.add(response.headers().toString());
-            list.add(response.body().bytes());
-            return list;
+            this.header=response.headers().toString();
+            this.bodyByte=response.body().bytes();
+            //list.add(response.headers().toString());
+            //list.add(response.body().bytes());
+            return response.body().bytes();
         } catch (Exception e) {
             System.out.println("okhttp出错！" + e.getMessage());
         }
@@ -258,8 +286,8 @@ public class OkHttp {
      * @param url
      * @return
      */
-    public byte[] goPostByteWithOutHeader(String url,HashMap<String,String> header,HashMap<String,String> body){
-        return (byte[])goPostByte(url,header,body).get(1);
+    public byte[] goPostByteWithOutHeader(String url,HashMap<String,String> body){
+        return goPostByte(url,null,body);
     }
     /**
      * 以字节形式返回数据，定义header ,返回数据包括报头
@@ -267,9 +295,9 @@ public class OkHttp {
      * @param header
      * @return
      */
-    public List<Object> goPostByte(String url,HashMap<String, String> header,HashMap<String,String> body){
+    public byte[] goPostByte(String url,HashMap<String, String> header,HashMap<String,String> body){
         OkHttpClient.Builder client =new OkHttpClient().newBuilder().readTimeout(800,TimeUnit.SECONDS).followRedirects(false);
-        List<Object> list=new ArrayList<>();
+        //List<Object> list=new ArrayList<>();
         //OkHttpClient client = new OkHttpClient(builder);
 
         Request.Builder request = new Request.Builder();
@@ -295,14 +323,14 @@ public class OkHttp {
                 Response response=client.build().newCall(request.build()).execute()
         ) {
             //System.out.println(response.headers());
-            list.add(response.headers().toString());
-            list.add(response.body().bytes());
-            return list;
+            this.header=response.headers().toString();
+            this.bodyByte=response.body().bytes();
+            //list.add(response.headers().toString());
+            //list.add(response.body().bytes());
+            return response.body().bytes();
         } catch (Exception e) {
             System.out.println("okhttp出错！" + e.getMessage());
         }
-
-
         return null;
     }
 }
